@@ -1,0 +1,40 @@
+<div class="row justify-content-md-center" style="margin-top: 30px">
+    <div class="col-md-4">
+
+        {{#if message}}
+            <div class="alert {{messageClass}}" role="alert">
+                {{message}}
+            </div>
+        {{/if}}
+
+        <form method="POST" action="/register">
+            <div class="form-group">
+                <label for="firstNameInput">First Name</label>
+                <input name="firstName" type="text" class="form-control" id="firstNameInput">
+            </div>
+
+            <div class="form-group">
+                <label for="lastNameInput">Last Name</label>
+                <input name="firstName" type="text" class="form-control" id="lastNameInput">
+            </div>
+
+            <div class="form-group">
+                <label for="emailInput">Email address</label>
+                <input name="email" type="email" class="form-control" id="emailInput" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <input name="password" type="password" class="form-control" id="passwordInput" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPasswordInput">Confirm Password</label>
+                <input name="confirmPassword" type="password" class="form-control" id="confirmPasswordInput"
+                    placeholder="Re-enter your password here">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
